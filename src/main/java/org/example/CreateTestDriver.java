@@ -23,7 +23,6 @@ public class CreateTestDriver {
 //Add chrome switch to disable notification - "**--disable-notifications**"
         options.addArguments("--disable-notifications");
 
-        //System.setProperty("webdriver.chrome.driver", "/Users/viktoriakomarova/IdeaProjects/untitled3/chromedriver");
         WebDriverManager.chromedriver().arch64().setup();
         WebDriver driver = new ChromeDriver(options);
         driver.manage().window().maximize();
